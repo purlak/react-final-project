@@ -9,8 +9,8 @@ class Search extends Component {
       books: []
     }
   }
-  handleSearchInput = () => {
-
+  handleSearchInput = event => {
+    this.setState({searchTerm: event.target.value });
   }
 
   render () {
