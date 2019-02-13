@@ -1,6 +1,7 @@
 App Plan
 
-- This App uses a React/Redux front end and Rails backend. It connects to GoogleBooks API to search for books and allows the user to save the book to a BookList.
+- This App uses a React/Redux front end and Rails backend.
+- It connects to GoogleBooks API to search for books and allows the user to save the book to their WatchList/BookList.
 
 - Project Requirements:
   - The code should be written in ES6 as much as possible
