@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 const api_url = 'https://www.googleapis.com/books/v1'
+const api_key = process.env.REACT_APP_API_KEY;
 
 class Search extends Component {
 
