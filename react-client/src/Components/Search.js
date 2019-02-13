@@ -38,9 +38,10 @@ class Search extends Component {
           value={this.state.searchTerm}
           placeholder="search books"
         />
-        <button onClick={this.searchBook}>Search</button>
+        <button className="buttonSize" onClick={this.searchBook}>Search</button>
       </div>
-      <Books />
+
+      <Books books={this.state.books}/>
     )
   }
 }
