@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const api_url = 'https://www.googleapis.com/books/v1'
+
 class Search extends Component {
 
   constructor () {
@@ -14,7 +16,7 @@ class Search extends Component {
   }
 
   searchBook = () => {
-    
+
   }
 
   render () {
