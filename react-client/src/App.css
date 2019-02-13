@@ -33,3 +33,12 @@
   height: 3.5vh;
   font-size: 20px;
 }
+
+.buttonSize {
+  margin-left: 20px;
+  font-family: "arial";
+  width: 8%;
+  background-color: lightgrey;
+  color: black;
+  font-size: 20px;
+}
