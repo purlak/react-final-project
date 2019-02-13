@@ -19,7 +19,11 @@ class Search extends Component {
         <input
           type="text"
           onChange={this.handleSearchInput}
-          onKeyPress=""
+          onKeyPress={event => {
+            if (event.key === 'Enter') {
+              this.searchBook()
+            }
+          }}
           value=""
           placeholder=""
         />
