@@ -17,7 +17,10 @@ class Search extends Component {
   }
 
   searchBook = () => {
-
+    const query = this.state.searchTerm;
+    fetch (`${api_url}/volumes?q=${query}&key=${api_key}`)
+    .then (res => res.json())
+    .then(data => this.setState({books: data.items}))
   }
 
   render () {
