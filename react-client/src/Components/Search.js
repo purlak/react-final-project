@@ -4,7 +4,14 @@ class Search extends Component {
   render () {
     return (
       <div>
-        
+        <input
+          type="text"
+          onChange=""
+          onKeyPress=""
+          value=""
+          placeholder=""
+        />
+        <button onClick=""></button>
       </div>
     )
   }
