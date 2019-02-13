@@ -16,7 +16,7 @@ class Search extends Component {
   render () {
     return (
       <div>
-        <input
+        <input className="searchBar"
           type="text"
           onChange={this.handleSearchInput}
           onKeyPress={event => {
@@ -24,8 +24,8 @@ class Search extends Component {
               this.searchBook()
             }
           }}
-          value=""
-          placeholder=""
+          value={this.state.searchTerm}
+          placeholder="search books"
         />
         <button onClick=""></button>
       </div>
