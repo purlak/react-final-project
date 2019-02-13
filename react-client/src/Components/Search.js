@@ -2,10 +2,17 @@ import React, { Component } from 'react';
 
 class Search extends Component {
 
+  constructor () {
+    super ()
+    this.state = {
+      searchTerm: '',
+      books: []
+    }
+  }
   handleSearchInput = () => {
 
   }
-  
+
   render () {
     return (
       <div>
