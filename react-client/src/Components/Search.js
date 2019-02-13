@@ -25,6 +25,7 @@ class Search extends Component {
         />
         <button onClick=""></button>
       </div>
+      <Books />
     )
   }
 }
