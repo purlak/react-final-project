@@ -1,5 +1,10 @@
 .App {
+  font-family: "arial";
   text-align: center;
+  height: 1080px  ;
+  background-color: grey;
+  position: relative;
+  z-index: 3;
 }
 
 .welcome {
