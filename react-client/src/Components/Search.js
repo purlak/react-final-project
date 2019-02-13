@@ -13,6 +13,10 @@ class Search extends Component {
     this.setState({searchTerm: event.target.value });
   }
 
+  searchBook = () => {
+    
+  }
+
   render () {
     return (
       <div>
