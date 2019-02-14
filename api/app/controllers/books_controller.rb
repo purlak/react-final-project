@@ -1,10 +1,11 @@
 class BooksController < ApplicationController
 
   def create
+    # binding.pry
     book = Book.new(book_params)
     if book.save
       render json: book
-    end 
+    end
   end
 
   private
