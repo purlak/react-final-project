@@ -10,9 +10,13 @@ class Display extends Component {
       title, authors, publisher, imageLinks
     }
     // console.log(book)
-    fetch (`http://localhost:3001`, {
+    fetch (`http://localhost:3001/books`, {
       method: 'POST',
-      body: JSON.stringify({book: bookObj})
+      body: JSON.stringify({book: bookObj}),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      }
     })
   }
   render ()  {
