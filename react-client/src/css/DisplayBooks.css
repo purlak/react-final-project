@@ -14,5 +14,9 @@
 }
 
 .imageSize {
-
+  width: 80px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
