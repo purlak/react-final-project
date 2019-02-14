@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Books from './Books.js';
 import {fetchWatchList} from '../actions/watchList.js';
 import {  connect } from 'react-redux';
+import WatchList from './WatchList.js'
 
 const api_url = 'https://www.googleapis.com/books/v1'
 const api_key = process.env.REACT_APP_API_KEY;
@@ -19,9 +20,9 @@ class Search extends Component {
     this.setState({searchTerm: event.target.value });
   }
 
-  // componentDidMount () {
-  //   this.props.fetchWatchList()
-  // }
+  componentDidMount () {
+    this.props.fetchWatchList()
+  }
 
   searchBook = () => {
     const query = this.state.searchTerm;
@@ -50,10 +51,17 @@ class Search extends Component {
         <Books books={this.state.books}/>
         <div>
           <h1>WatchList</h1>
+          <WatchList />
         </div>
       </div>
     )
   }
 }
+
+// const mapStateToProps = (state) => {
+//   return {
+//     watchList: state.watchList
+//   }
+// }
 
 export default connect(null, { fetchWatchList })(Search);
