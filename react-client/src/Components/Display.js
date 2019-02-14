@@ -16,7 +16,7 @@ class Display extends Component {
       headers: {
         "Content-Type": 'application/json'
       }
-    }). then(res => res.json().then(book => this.props.addBook(book)))
+    }).then(res => res.json().then(book => this.props.addBook(book)))
   }
   render ()  {
     const { book  } = this.props
