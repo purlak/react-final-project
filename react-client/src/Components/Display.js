@@ -21,9 +21,9 @@ class Display extends Component {
     return (
         <div className="displayBook">
           {book.volumeInfo.imageLinks? (
-            <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize"/>
+            <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize" alt=""/>
           ) : (
-            <img src={`${No_image_available}`} className="imageSize"/>
+            <img src={`${No_image_available}`} className="imageSize" alt=""/>
           )}
           {book.volumeInfo.title? (
               <h3 className="displayInfo">{book.volumeInfo.title}</h3>
