@@ -14,8 +14,8 @@ class Display extends Component {
       method: 'POST',
       body: JSON.stringify({book: bookObj}),
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
+        // Accept: 'application/json',
+        "Content-Type": 'application/json'
       }
     })
   }
