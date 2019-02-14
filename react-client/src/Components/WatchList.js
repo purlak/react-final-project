@@ -4,6 +4,9 @@ import {connect} from 'react-redux';
 class WatchList extends Component {
   render () {
     const { watchList } = this.props
+    if (watchList.length === 0) {
+      return <p className="header">You do not have any books in your list currently. </p>
+    } else {
     return (
       <div>
         {watchList.map(book => <p>
@@ -12,7 +15,7 @@ class WatchList extends Component {
           </ul>
         </p>)}
       </div>
-    )
+    )}
   }
 }
 
