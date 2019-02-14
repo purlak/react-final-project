@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../css/DisplayBooks.css';
+import No_image_available from '../images/No_image_available.png';
 
-const Display = ({book}) => {
+const Display = ({book}) =>
   <div className="displayBook">
     {book.volumeInfo.imageLinks? (
       <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize"/>
@@ -23,7 +24,7 @@ const Display = ({book}) => {
 
     <button>Add to MyList</button>
   </div>
-  )}
-}
+
+
 
 export default Display;
