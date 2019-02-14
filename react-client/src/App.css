@@ -25,8 +25,14 @@
   background-color: rgba(48, 48, 48, .5);
 }
 
-.header {
+.headertext {
   text-align: center;
+  font-size: calc(3px + 2vmin);
+}
+
+.text {
+  text-align: center;
+  font-size: calc(1px + 2vmin);
 }
 .watchlist {
   text-align: left;
