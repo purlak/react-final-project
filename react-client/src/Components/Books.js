@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Display from './Display.js'
+import Display from './Display.js';
+import No_image_available from '../images/No_image_available.png';
 
 class Books extends Component {
 
@@ -12,7 +13,12 @@ class Books extends Component {
         <div>
           {this.props.books.map(book =>
             <div className="displayBook">
-              <Display book= {book}/>
+              {book.volumeInfo.imageLinks? (
+                <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize"/>
+              ) : (
+                <img src={`${No_image_available}`} className="imageSize"/>
+              )}
+
             </div>
           )}
           </div>
