@@ -2,29 +2,32 @@ import React, { Component } from 'react';
 import '../css/DisplayBooks.css';
 import No_image_available from '../images/No_image_available.png';
 
-const Display = ({book}) =>
-  <div className="displayBook">
-    {book.volumeInfo.imageLinks? (
-      <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize"/>
-    ) : (
-      <img src={`${No_image_available}`} className="imageSize"/>
-    )}
+class Display extends Component {
 
-    {book.volumeInfo.title? (
-        <h3 className="displayInfo">{book.volumeInfo.title}</h3>
-    ) : (
-        <h3 className="displayInfo">Title: Info N/A</h3>
-    )}
+  render ()  {
+    return (
+        <div className="displayBook">
+          {book.volumeInfo.imageLinks? (
+            <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize"/>
+          ) : (
+            <img src={`${No_image_available}`} className="imageSize"/>
+          )}
 
-    {book.volumeInfo.authors? (
-        <p className="displayInfo">Author: {book.volumeInfo.authors[0]}</p>
-    ) : (
-        <p>Author: N/A</p>
-    )}
+          {book.volumeInfo.title? (
+              <h3 className="displayInfo">{book.volumeInfo.title}</h3>
+          ) : (
+              <h3 className="displayInfo">Title: Info N/A</h3>
+          )}
 
-    <button>Add to MyList</button>
-  </div>
-
-
+          {book.volumeInfo.authors? (
+              <p className="displayInfo">Author: {book.volumeInfo.authors[0]}</p>
+          ) : (
+              <p>Author: N/A</p>
+          )}
+          <button onClick={}>Add to MyList</button>
+        </div>
+    )
+  })
+}
 
 export default Display;
