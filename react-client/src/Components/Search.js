@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Books from './Books.js';
+import {fetchWatchList} from '../actions/watchList.js';
+import {  connect } from 'react-redux';
 
 const api_url = 'https://www.googleapis.com/books/v1'
 const api_key = process.env.REACT_APP_API_KEY;
@@ -15,6 +17,10 @@ class Search extends Component {
   }
   handleSearchInput = event => {
     this.setState({searchTerm: event.target.value });
+  }
+
+  componentDidMount () {
+
   }
 
   searchBook = () => {
@@ -50,4 +56,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default connect(null, { fetchWatchList })(Search);
