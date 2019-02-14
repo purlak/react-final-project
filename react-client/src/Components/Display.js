@@ -14,13 +14,18 @@ class Display extends Component {
 
   render () {
     const { volumeInfo } = this.props.book
-    const keys = ['title', 'authors', 'publisher', 'imageLinks', 'infoLink']
+    const keys = ['title', 'authors', 'imageLinks']
     return (
+      <div>
       keys.map((key) => {
         return (
-          <div>{ this.getOrDefault(key, volumeInfo) }</div>
-        )
-      })
+          <div>
+          { this.getOrDefault(key, volumeInfo) }
+          </div>
+        )}
+      <button>Add</button>
+      </div>
+      )
     )
   }
 }
