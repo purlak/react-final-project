@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
 // const watchList = [
 //   {title: ""}
@@ -9,7 +10,7 @@ class WatchList extends Component {
     const { watchList } = this.props
     return (
       <div>
-        {watchList.map(book)}
+        {watchList.map(book => <p>{book.title}</p>)}
       </div>
     )
   }
@@ -20,4 +21,4 @@ const mapStateToProps = state => {
     watchList: state.watchList
   }
 }
-export default connect(mapStateToProps)WatchList;
+export default connect(mapStateToProps)(WatchList);
