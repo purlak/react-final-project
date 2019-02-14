@@ -4,6 +4,8 @@ import No_image_available from '../images/No_image_available.png';
 
 class Display extends Component {
   addBook = () => {
+    console.log(this.props.book)
+    const {title, author, publisher, imageLinks} = this.props.book
     fetch (`http://localhost:3001`, {
       method: 'POST',
 
@@ -33,7 +35,7 @@ class Display extends Component {
           <button onClick={this.addBook}>Add to MyList</button>
         </div>
     )
-  })
+  }
 }
 
 export default Display;
