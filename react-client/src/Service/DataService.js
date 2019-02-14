@@ -3,7 +3,7 @@ import '../css/DisplayBooks.css';
 
 
 const DataService = {
-  searchBook (data, key) => {
+  searchBook (data, key) {
     switch (key)  {
 
     default:
