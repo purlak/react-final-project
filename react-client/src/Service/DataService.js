@@ -11,9 +11,13 @@ const DataService = {
         <div> <h2 className="displayInfo">Title: {data}</h2> </div>
       )
     case ('authors'):
-
+      return (
+        <div> <h2 className="displayInfo">Author: {data[0]}</h2> </div>
+      )
     case ('imageLinks'):
-
+      return (
+        <div> <img src={`${data.smallThumbnail}`} className="imageSize"/> </div>
+      )
     default:
       return;
     }
