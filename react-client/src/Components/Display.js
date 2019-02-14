@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../css/DisplayBooks.css';
 import No_image_available from '../images/No_image_available.png';
+import {addBook} from '../actions/addBook.js'
+import {  connect } from 'react-redux'
 
 class Display extends Component {
   addBook = () => {
@@ -14,7 +16,7 @@ class Display extends Component {
       headers: {
         "Content-Type": 'application/json'
       }
-    }). then(res => res.json().then(book => console.log(book)))
+    }). then(res => res.json().then(book => this.props.addBook(book)))
   }
   render ()  {
     const { book  } = this.props
@@ -41,4 +43,4 @@ class Display extends Component {
   }
 }
 
-export default Display;
+export default connect(null, {  addBook })(Display);
