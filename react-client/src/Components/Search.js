@@ -52,7 +52,7 @@ class Search extends Component {
           <Books books={this.state.books}/>
         </div>
         <div className="watchlist">
-          <h3 className="header">My WatchList</h3>
+          <h3 className="headertext">My WatchList</h3>
           <WatchList />
         </div>
       </div>

@@ -5,7 +5,7 @@ class WatchList extends Component {
   render () {
     const { watchList } = this.props
     if (watchList.length === 0) {
-      return <p className="header">You do not have any books in your list currently. </p>
+      return <p className="text">You do not have any books in your list currently. </p>
     } else {
     return (
       <div>
