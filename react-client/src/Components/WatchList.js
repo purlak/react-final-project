@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
-// const watchList = [
-//   {title: ""}
-// ]
-
 class WatchList extends Component {
   render () {
     const { watchList } = this.props
