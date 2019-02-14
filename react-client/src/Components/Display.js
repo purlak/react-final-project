@@ -3,8 +3,14 @@ import '../css/DisplayBooks.css';
 import No_image_available from '../images/No_image_available.png';
 
 class Display extends Component {
+  addBook = () => {
+    fetch (`http://localhost:3001`, {
+      method: 'POST',
 
+    })
+  }
   render ()  {
+    const { book  } = this.props
     return (
         <div className="displayBook">
           {book.volumeInfo.imageLinks? (
@@ -24,7 +30,7 @@ class Display extends Component {
           ) : (
               <p>Author: N/A</p>
           )}
-          <button onClick={}>Add to MyList</button>
+          <button onClick={this.addBook}>Add to MyList</button>
         </div>
     )
   })
