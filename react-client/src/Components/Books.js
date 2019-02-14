@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Display from './Display.js';
-import No_image_available from '../images/No_image_available.png';
 
 class Books extends Component {
 
@@ -11,7 +10,7 @@ class Books extends Component {
     else if (typeof(this.props.books) !== 'undefined' || this.props.books !== null){
       return (
         <div>
-          {this.props.books.map(book => <Display book={book} />)}
+          {this.props.books.map(book => <Display key={book.title} book={book} />)}
         </div>
       )}
   }
