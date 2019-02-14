@@ -19,9 +19,9 @@ class Search extends Component {
     this.setState({searchTerm: event.target.value });
   }
 
-  componentDidMount () {
-    this.props.fetchWatchList()
-  }
+  // componentDidMount () {
+  //   this.props.fetchWatchList()
+  // }
 
   searchBook = () => {
     const query = this.state.searchTerm;
