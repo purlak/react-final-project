@@ -6,7 +6,11 @@ class WatchList extends Component {
     const { watchList } = this.props
     return (
       <div>
-        {watchList.map(book => <p>{book.title}</p>)}
+        {watchList.map(book => <p>
+          <ul>
+            <li>{book.title}</li>
+          </ul>
+        </p>)}
       </div>
     )
   }
