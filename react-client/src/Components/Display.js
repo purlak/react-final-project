@@ -9,12 +9,11 @@ class Display extends Component {
     const bookObj = {
       title, publisher, imageLinks
     }
-    // console.log(book)
+    console.log(bookObj)
     fetch (`http://localhost:3001/books`, {
       method: 'POST',
       body: JSON.stringify({book: bookObj}),
       headers: {
-        // Accept: 'application/json',
         "Content-Type": 'application/json'
       }
     })
