@@ -5,9 +5,9 @@ import No_image_available from '../images/No_image_available.png';
 class Display extends Component {
   addBook = () => {
     // console.log(this.props.book)
-    const {title, authors, publisher, imageLinks} = this.props.book.volumeInfo
+    const {title, publisher, imageLinks} = this.props.book.volumeInfo
     const bookObj = {
-      title, authors, publisher, imageLinks
+      title, publisher, imageLinks
     }
     // console.log(book)
     fetch (`http://localhost:3001/books`, {
