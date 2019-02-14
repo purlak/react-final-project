@@ -42,6 +42,9 @@ class Search extends Component {
           <button className="buttonSize" onClick={this.searchBook}>Search</button>
         </div>
         <Books books={this.state.books}/>
+        <div>
+          <h1>WatchList</h1>
+        </div>
       </div>
     )
   }
