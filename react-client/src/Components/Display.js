@@ -4,11 +4,15 @@ import No_image_available from '../images/No_image_available.png';
 
 class Display extends Component {
   addBook = () => {
-    console.log(this.props.book)
-    const {title, author, publisher, imageLinks} = this.props.book
+    // console.log(this.props.book)
+    const {title, authors, publisher, imageLinks} = this.props.book.volumeInfo
+    const bookObj = {
+      title, authors, publisher, imageLinks
+    }
+    // console.log(book)
     fetch (`http://localhost:3001`, {
       method: 'POST',
-
+      body: JSON.stringify({book: bookObj})
     })
   }
   render ()  {
