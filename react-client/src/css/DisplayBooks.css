@@ -1,11 +1,18 @@
 .displayInfo {
-
+  margin-top: 0px;
+  font-size: 15px;
+  color: white;
 }
 
 .displayBook {
-
+  text-align: center;
+  width: 10%;
+  display: inline-grid;
+  margin: 35px;
+  font-size: 15px;
+  color: white;
 }
 
 .imageSize {
-  
+
 }
