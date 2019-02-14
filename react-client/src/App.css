@@ -33,10 +33,11 @@
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-color: lightgrey;
   color: black;
-  border-color: white;
-  font-size: calc(2px + 2vmin);
+  border: 5px solid;
+  border-color: grey;
+  font-size: calc(1px + 2vmin);
 }
 
 .searchBar {
