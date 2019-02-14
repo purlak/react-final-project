@@ -3,8 +3,12 @@ import '../css/DisplayBooks.css';
 
 
 const DataService = {
-  searchBook = () => {
+  searchBook (data, key) => {
+    switch (key)  {
 
+    default:
+      return;
+    }
   }
 
 
