@@ -1,7 +1,8 @@
 .App {
   font-family: "arial";
   text-align: center;
-  height: 1080px  ;
+  height: 1000px ;
+  width: auto;
   background-color: grey;
   position: relative;
   z-index: 3;
@@ -24,6 +25,20 @@
   background-color: rgba(48, 48, 48, .5);
 }
 
+.header {
+  text-align: center;
+}
+.watchlist {
+  text-align: left;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  color: black;
+  border-color: white;
+  font-size: calc(2px + 2vmin);
+}
+
 .searchBar {
   margin-top:  70px;
   background-color: white;
@@ -40,5 +55,5 @@
   width: 8%;
   background-color: lightgrey;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
