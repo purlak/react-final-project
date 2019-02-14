@@ -14,7 +14,7 @@ class Display extends Component {
       headers: {
         "Content-Type": 'application/json'
       }
-    })
+    }). then(res => res.json().then(book => console.log(book)))
   }
   render ()  {
     const { book  } = this.props
