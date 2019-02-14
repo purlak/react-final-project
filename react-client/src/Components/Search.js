@@ -59,11 +59,4 @@ class Search extends Component {
     )
   }
 }
-
-// const mapStateToProps = (state) => {
-//   return {
-//     watchList: state.watchList
-//   }
-// }
-
 export default connect(null, { fetchWatchList })(Search);
