@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Books from './Books.js';
+import Books from '../components/Books.js';
 import {fetchWatchList} from '../actions/watchList.js';
 import {  connect } from 'react-redux';
 import WatchList from './WatchList.js'
