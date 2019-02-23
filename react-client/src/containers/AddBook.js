@@ -4,7 +4,7 @@ import '../App.css';
 import {addBook} from '../actions/addBook.js'
 import {  connect } from 'react-redux'
 
-class Display extends Component {
+class AddBook extends Component {
   addBook = () => {
     const {title, publisher, imageLinks} = this.props.book.volumeInfo
     const bookObj = {
@@ -28,4 +28,4 @@ class Display extends Component {
     )
   }
 }
-export default connect(null, {  addBook })(Display);
+export default connect(null, {  addBook })(AddBook);
