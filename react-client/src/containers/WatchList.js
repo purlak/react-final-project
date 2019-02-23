@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import DisplayTitle from '../components/DisplayTitle.js';
 
 class WatchList extends Component {
   render () {
@@ -10,9 +11,7 @@ class WatchList extends Component {
     return (
       <div>
         {watchList.map(book => <p>
-          <ul>
-            <li>{book.title}</li>
-          </ul>
+          <DisplayTitle title={book.title} />
         </p>)}
       </div>
     )}
