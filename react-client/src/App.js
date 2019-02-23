@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Search from './containers/Search.js';
 import About from './components/About.js';
+import Contact from './components/Contact.js';
 import './App.css';
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
                 <Route exact path='/' component={Search} />
                 <Route path='/search' component={Search} />
                 <Route path='/about' component={About} />
-                <Route path='/contact' component={ () => <div>Contact company@email.com</div> } />
+                <Route path='/contact' component={Contact}  />
               </Switch>
             </div>
           </Router>
