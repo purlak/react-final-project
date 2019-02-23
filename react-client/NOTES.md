@@ -8,7 +8,7 @@ App Plan
   X It uses Create-React-App
   X Your app should have one HTML page to render your react-redux application
   X There should be 2 container (manage State) components
-  - There should be 5 stateless (Presentational) components
+  X There should be 5 stateless (Presentational) components
   X There should be 3 routes
   X The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate docs; docs for v4 can be found here)
   X Use Redux middleware to respond to and modify state change
