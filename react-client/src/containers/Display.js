@@ -28,5 +28,4 @@ class Display extends Component {
     )
   }
 }
-
 export default connect(null, {  addBook })(Display);
