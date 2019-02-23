@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DisplayBook from '../components/DisplayBook.js';
+import '../App.css';
 import {addBook} from '../actions/addBook.js'
 import {  connect } from 'react-redux'
 
@@ -20,7 +21,7 @@ class Display extends Component {
   render ()  {
     const { book  } = this.props
     return (
-        <div>
+        <div className="displayBook">
           <DisplayBook book={book}/>
           <button onClick={this.addBook}>Add to MyList</button>
         </div>
