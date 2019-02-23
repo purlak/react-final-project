@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/DisplayBooks.css';
+import '../App.css';
 import No_image_available from '../images/No_image_available.png';
 
 class DisplayBook extends Component {
@@ -7,7 +8,7 @@ class DisplayBook extends Component {
     const {book} = this.props
     console.log(this.props)
     return  (
-      <div className="displayBook">
+      <div>
         {book.volumeInfo.imageLinks? (
           <img src={`${book.volumeInfo.imageLinks.smallThumbnail}`} className="imageSize" alt=""/>
         ) : (
