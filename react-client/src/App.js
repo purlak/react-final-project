@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-
 import Search from './containers/Search.js';
 import About from './components/About.js';
-import NavBar from './components/NavBar.js';
-
 import './App.css';
 
 class App extends Component {
@@ -16,8 +13,8 @@ class App extends Component {
           <Router>
             <div>
               <div>
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
+                <Link to='/'className="">Search</Link>  &nbsp;
+                <Link to='/about'>About</Link>  &nbsp;
                 <Link to='/contact'>Contact</Link>
               </div>
               <Switch>
