@@ -6,7 +6,6 @@ import No_image_available from '../images/No_image_available.png';
 class DisplayBook extends Component {
   render () {
     const {book} = this.props
-    console.log(this.props)
     return  (
       <div>
         {book.volumeInfo.imageLinks? (
