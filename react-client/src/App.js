@@ -10,7 +10,11 @@ class App extends Component {
       <div className="App">
         <div className="App-body">
           <h1 className="welcome">Welcome to the Book Tracker App!</h1>
-          <Search />
+          <Router>
+            <Switch>
+              <Route exact path='/' component={Search} />
+            </Switch>
+          </Router>
         </div>
       </div>
     );
