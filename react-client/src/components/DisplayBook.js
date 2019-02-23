@@ -27,5 +27,4 @@ class DisplayBook extends Component {
     )
   }
 }
-
 export default DisplayBook;
