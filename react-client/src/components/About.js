@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class About extends Component {
   render () {
-
     return (
       <div className="watchlist">
         <p className="headertext">About this App:</p>
@@ -11,5 +10,4 @@ class About extends Component {
     )
   }
 }
-
 export default About;
