@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Search from './containers/Search.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
+import WatchList from './containers/WatchList.js'
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' component={Search} />
                 <Route path='/search' component={Search} />
+                <Route path='/watchlist' component={WatchList}  />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact}  />
               </Switch>
