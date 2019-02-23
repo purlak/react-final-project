@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Display from '../containers/Display.js';
+import Display from './Display.js';
 
 class Books extends Component {
 
