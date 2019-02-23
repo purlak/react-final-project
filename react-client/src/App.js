@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 import Search from './containers/Search.js';
+import About from './components/About.js';
+import NavBar from './components/NavBar.js';
+
 import './App.css';
 
 class App extends Component {
@@ -11,9 +14,19 @@ class App extends Component {
         <div className="App-body">
           <h1 className="welcome">Welcome to the Book Tracker App!</h1>
           <Router>
-            <Switch>
-              <Route exact path='/' component={Search} />
-            </Switch>
+            <div>
+              <div>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/contact'>Contact</Link>
+              </div>
+              <Switch>
+                <Route exact path='/' component={Search} />
+                <Route path='/search' component={Search} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={ () => <div>Contact company@email.com</div> } />
+              </Switch>
+            </div>
           </Router>
         </div>
       </div>
