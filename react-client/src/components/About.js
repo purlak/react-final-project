@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-class About extends Component {
-  render () {
+const About = () => {
+  // render () {
     return (
       <div className="watchlist">
         <p className="headertext">About this App:</p>
@@ -9,6 +9,6 @@ class About extends Component {
         <p className="text"> For more information visit: <a href="https://developers.google.com/books/">Google Books API</a></p>
       </div>
     )
-  }
+  // }
 }
 export default About;

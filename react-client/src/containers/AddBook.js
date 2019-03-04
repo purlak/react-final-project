@@ -6,6 +6,7 @@ import {  connect } from 'react-redux'
 
 class AddBook extends Component {
   addBook = () => {
+    console.log('A')
     const {title, publisher, imageLinks} = this.props.book.volumeInfo
     const bookObj = {
       title, publisher, imageLinks
@@ -16,7 +17,10 @@ class AddBook extends Component {
       headers: {
         "Content-Type": 'application/json'
       }
-    }).then(res => res.json().then(book => this.props.addBook(book)))
+    }).then(res => res.json().then(book => {
+      console.log('B')
+      this.props.addBook(book)}))
+    console.log('E')
   }
   render ()  {
     const { book  } = this.props
